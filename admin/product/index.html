@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="../../css/admin/reset.css" type="text/css" rel="stylesheet">
+    <link href="../../css/admin/header.css" type="text/css" rel="stylesheet">
+    <link href="../../css/admin/aside.css" type="text/css" rel="stylesheet">
+    <link href="../../css/admin/layout.css" type="text/css" rel="stylesheet">
+    <link href="../../css/admin/product/management.css" type="text/css" rel="stylesheet">
+    <link href="../../css/admin/icon.css" type="text/css" rel="stylesheet">
+    <link href="../../css/admin/util.css" type="text/css" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body class="body">
+
+
+    <header class="header">
+        <h1 class="logo">Ducktem</h1>
+        <ul class="service-area">
+            <li>관리자님, 환영합니다</li>
+            <li class="login">로그아웃</li>
+            <li class="alarm">알림</li>
+        </ul>
+    </header>
+
+    <div class="bssssss">
+        <aside class="aside">
+            <h1 class="d-none">aside</h1>
+            <ul>
+                <div>대시보드</div>
+
+                <div>상품관리</div>
+                <ul>
+                    <li><a href="">상품조회/비공개</a></li>
+                    <li><a href="">신고상품</a></li>
+                    <li><a href="">키워드 조회/삭제</a></li>
+                    <li><a href="">금지 키워드 등록/복구</a></li>
+                </ul>
+
+                <div>게시판 관리</div>
+                <ul>
+                    <li><a href="">상품조회/비공개</a></li>
+                    <li><a href="">신고상품</a></li>
+                    <li><a href="">키워드 조회/삭제</a></li>
+                    <li><a href="">금지 키워드 등록/복구</a></li>
+                </ul>
+
+                <div>상품관리</div>
+                <ul>
+                    <li><a href="">카테고리 관리</a></li>
+                    <li><a href="">배너 관리</a></li>
+                    <li><a href="">팝업창 관리</a></li>
+                </ul>
+
+                <div>회원관리</div>
+                <ul>
+                    <li><a href="">회원 조회/삭제</a></li>
+                    <li><a href="">메세지 전송</a></li>
+                </ul>
+
+                <div>헬프 센터</div>
+                <ul>
+                    <li><a href="">공지사항</a></li>
+                    <li><a href="">문의 게시판</a></li>
+                </ul>
+
+            </ul>
+        </aside>
+
+        <main class="main">
+
+            <h1 class="title">상품조회/비공개</h1>
+
+            <!-- =====================  검색조건 부분  =====================   -->
+
+
+            <section class="search-condition">
+
+                <h1 class="d-none">검색조건</h1>
+
+                <form>
+
+                    <div>
+                        <label><span>분류선택</span>
+                            <select name="combobox1" required>
+                                <option value="" disabled selected>1차분류</option>
+                                <option>전체분류</option>
+                                <option>공식굿즈</option>
+                                <option>비공식굿즈</option>
+                                <option>대리티켓팅</option>
+                            </select>
+                            <select name="combobox2" required>
+                                <option value="" disabled selected>2차분류</option>
+                                <option>전체보기</option>
+                                <option>음반/영상물</option>
+                                <option>응원도구</option>
+                                <option>포토카드</option>
+                                <option>포스터/포토북</option>
+                                <option>문구류</option>
+                                <option>기타잡화</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label><span>검색어</span>
+                            <select name="combobox3">
+                                <option>전체</option>
+                                <option>상품명</option>
+                                <option>상품ID</option>
+                                <option>작성자ID</option>
+                            </select>
+                            <input class="input"></input>
+                        </label>
+                    </div>
+
+
+                    <div>
+                        <label><span>판매가</span>
+                            <input></input><span>원 ~</span>
+                            <input></input><span>원</span>
+                        </label>
+                    </div>
+
+
+                    <div>
+                        <label><span>판매여부</span>
+                            <select name="combobox4">
+                                <option>전체선택</option>
+                                <option>판매중</option>
+                                <option>판매완료</option>
+                                <option>예약중</option>
+                            </select>
+                        </label>
+                    </div>
+
+
+                    <div>
+                        <label><span>등록일</span>
+                            <input type="date"></input><span>부터</span>
+                            <input type="date"></input><span>까지</span>
+                        </label>
+                    </div>
+
+                    <div class="search-condition-button">
+                        <button class="btn">
+                            검색
+                        </button>
+                    </div>
+
+                </form>
+
+            </section>
+
+
+            <!-- =====================  검색결과 부분  =====================   -->
+
+
+            <section class="search-result">
+
+                <div class="summary">
+                    <h1 class="d-none">검색 결과</h1>
+
+                    <div>
+                        <span>검색결과 :</span>
+                        <span>23건</span>
+                    </div>
+
+
+                    <div class="sort">
+                        <select name="combobox5">
+                            <option>10개씩 출력</option>
+                            <option>20개씩 출력</option>
+                            <option>50개씩 출력</option>
+                        </select>
+
+                        <select name="combobox6">
+                            <option>등록일순</option>
+                            <option>수정일자순</option>
+                            <option>상품ID순</option>
+                            <option>조회수순</option>
+                        </select>
+                    </div>
+
+                    <form>
+
+
+                        <div>
+                            <button>비공개</button>
+                        </div>
+
+
+                </div>
+
+
+
+                <!-- =====================  표 부분  =====================   -->
+
+                <div class="table">
+
+
+                    <div class="row">
+                        <span>선택</span>
+                        <span>상품ID</span>
+                        <span>상품제목</span>
+                        <span>등록시간</span>
+                        <span>가격</span>
+                        <span>카테고리</span>
+                        <span>작성자ID</span>
+                    </div>
+
+
+
+                    <div class="row">
+                        <span><input type="checkbox"></span>
+                        <span>
+                            <p>10256</p>
+                        </span>
+                        <span><a href="">엔시티 정우 사요,엔시티 정우 사요 엔시티 정우 사요 엔시티 정우 사요 엔시티 정우 사요 </a></span>
+                        <span>
+                            <p>2022-10-13<br>08:23:20</p>
+                        </span>
+                        <span>
+                            <p>21000원</p>
+                        </span>
+                        <span>
+                            <p>공식굿즈<br>-포토카드</p>
+                        </span>
+                        <span><a href="">미지123 </a></span>
+                    </div>
+
+                    <div class="row">
+                        <span><input type="checkbox"></span>
+                        <span>
+                            <p>10256</p>
+                        </span>
+                        <span><a href="">엔시티 정우 사요 </a></span>
+                        <span>
+                            <p>2022-10-13<br>08:23:20</p>
+                        </span>
+                        <span>
+                            <p>21000원</p>
+                        </span>
+                        <span>
+                            <p>공식굿즈<br>-포토카드</p>
+                        </span>
+                        <span><a href="">미지123 </a></span>
+                    </div>
+
+                    <div class="row">
+                        <span><input type="checkbox"></span>
+                        <span>
+                            <p>10256</p>
+                        </span>
+                        <span><a href="">엔시티 앤시티 정우 사요 </a></span>
+                        <span>
+                            <p>2022-10-13<br>08:23:20</p>
+                        </span>
+                        <span>
+                            <p>21000원</p>
+                        </span>
+                        <span>
+                            <p>공식굿즈<br>-포토카드</p>
+                        </span>
+                        <span><a href="">미지123 </a></span>
+                    </div>
+
+                    <div class="row">
+                        <span><input type="checkbox"></span>
+                        <span>
+                            <p>10256</p>
+                        </span>
+                        <span><a href="">엔시티 정우 정우 정우 정우 사요 </a></span>
+                        <span>
+                            <p>2022-10-13<br>08:23:20</p>
+                        </span>
+                        <span>
+                            <p>21000원</p>
+                        </span>
+                        <span>
+                            <p>공식굿즈<br>-포토카드</p>
+                        </span>
+                        <span><a href="">미지123 </a></span>
+                    </div>
+
+
+                    <div class="row">
+                        <span><input type="checkbox"></span>
+                        <span>
+                            <p>10256</p>
+                        </span>
+                        <span><a href="">엔시티 정우 사요 </a></span>
+                        <span>
+                            <p>2022-10-13<br>08:23:20</p>
+                        </span>
+                        <span>
+                            <p>21000원</p>
+                        </span>
+                        <span>
+                            <p>공식굿즈<br>-포토카드</p>
+                        </span>
+                        <span><a href="">미지123 </a></span>
+                    </div>
+
+                    <div class="row">
+                        <span><input type="checkbox"></span>
+                        <span>
+                            <p>10256</p>
+                        </span>
+                        <span><a href="">엔시티 정우 사요 </a></span>
+                        <span>
+                            <p>2022-10-13<br>08:23:20</p>
+                        </span>
+                        <span>
+                            <p>21000원</p>
+                        </span>
+                        <span>
+                            <p>공식굿즈<br>-포토카드</p>
+                        </span>
+                        <span><a href="">미지123 </a></span>
+                    </div>
+
+                    <div class="row">
+                        <span><input type="checkbox"></span>
+                        <span>
+                            <p>10256</p>
+                        </span>
+                        <span><a href="">엔시티 정우 사요 </a></span>
+                        <span>
+                            <p>2022-10-13<br>08:23:20</p>
+                        </span>
+                        <span>
+                            <p>21000원</p>
+                        </span>
+                        <span>
+                            <p>공식굿즈<br>-포토카드</p>
+                        </span>
+                        <span><a href="">미지123 </a></span>
+                    </div>
+
+
+                </div>
+
+
+
+                </form>
+
+
+                <hr>
+
+                <div>
+                    <ul class="paging">
+                        <li><a href="#">이전</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">다음</a></li>
+                    </ul>
+                </div>
+
+
+
+
+
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </main>
+    </div>
+
+</body>
+
+</html>
