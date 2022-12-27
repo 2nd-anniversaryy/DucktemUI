@@ -19,6 +19,28 @@
     margin: 30px 0;
 }
 
+.grid-menu>div {
+    cursor: pointer;
+}
+
+.menu-faq {
+    border-bottom: 3px solid gray;
+}
+.menu-question {
+    border-bottom: none;
+}
+.menu-method {
+    border-bottom: none;
+}
+.menu-policy {
+    border-bottom: none;
+}
+
+
+
+
+/* ==============================FAQ======================================== */
+
 .step-wrap {
     margin: 0 45px;
     width: 300px;
@@ -36,12 +58,12 @@
 }
 
 .qna-chk-wrap {
-    margin: 40px 0 0;
+    margin: 40px auto 0;
     width: 350px;
 }
 
 .answer {
-    background-color: gray;
+    background-color: rgba(128, 128, 128, 0.458);
     padding: 10px;
     border-radius: 10px;
 }
@@ -69,6 +91,7 @@
     transition: .5s;
     width: 8px;
     height: 16px;
+    align-self: center;
     }
 
 
@@ -79,4 +102,140 @@
 
 .qna-chk-wrap>div .cramps.active{
     display: block;
+}
+
+
+/* ========================1:1문의 페이지============================== */
+
+.question-page>h1 {
+    font-size: var(--font-4);
+}
+
+.question-board {
+    margin: 40px auto 0;
+    width: 350px;
+}
+
+.question-container>div {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.question-container {
+    cursor: pointer;
+    position: relative;
+    margin: 20px 0;
+}
+
+
+.question-container>div>label {
+    padding-left: 8px;
+    align-self: center;
+}
+
+.question-date {
+    font-size: var(--font-2);
+    justify-content: flex-end;
+    margin-bottom: 5px;
+}
+
+.btn-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.question-answer {
+    background-color: rgba(128, 128, 128, 0.458);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+input[id=title] {
+    width: 250px;
+    height: 25px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.382);
+    border: 1px solid gray;
+}
+
+input[id=detail] {
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.382);
+    border: 1px solid gray;
+
+}
+
+.secret-wrap {
+    padding-right: 30px;
+}
+
+
+/* =============================덕템이용방법 페이지============================ */
+
+.method-btn-container {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto 30px;
+}
+
+.method-btn-container>div {
+    width: 106px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+.manner-category-btn {
+    background-color: var(--color-primary);
+}
+
+.word-category-btn {
+    background-color: rgba(128, 128, 128, 0.2);
+}
+
+.method-category-btn {
+    background-color: rgba(128, 128, 128, 0.2);
+}
+
+.method-btn-container>div>span:nth-child(1) {
+    font-size: var(--font-5);
+}
+
+.method-btn-container>div>span:nth-child(2) {
+    font-size: var(--font-2);
+}
+
+.method-page h1 {
+    font-size: var(--font-5);
+    color: var(--color-primary);
+}
+
+.method-page p {
+    width: 330px;
+    margin: 10px auto 0;
+}
+
+/* =========================덕템운영정책 페이지=============================== */
+
+.policy-page p{
+    width: 330px;
+    margin: 10px auto;
 }
