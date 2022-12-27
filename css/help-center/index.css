@@ -169,17 +169,26 @@ input[id=title] {
     border: 1px solid gray;
 }
 
-input[id=detail] {
+.input-container textarea {
     width: 250px;
     height: 150px;
     border-radius: 10px;
     background-color: rgba(128, 128, 128, 0.382);
     border: 1px solid gray;
-
 }
 
 .secret-wrap {
     padding-right: 30px;
+}
+
+/* jihyeon */
+.question-container .cramps.active{
+    transition: transform 1s;
+    transform: rotate(90deg);
+}
+
+.question-container .cramps.active{
+    display: block;
 }
 
 

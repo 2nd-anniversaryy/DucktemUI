@@ -65,13 +65,26 @@ window.addEventListener("load", function () {
     const cancelBtn = questionPage.querySelector('.cancel-btn');
     const registBtn = questionPage.querySelector('.regist-btn');
 
+// jihyeon
+
+
+
+
+//
+
     for (let i = 0; i < questionContainer.length; i++) {
         questionContainer[i].onclick = function (e) {
-            if (questionAnswer[i].classList.contains('d-none'))
-                questionAnswer[i].classList.remove('d-none')
+            let cramp = questionContainer[i].querySelector(".cramps");
 
-            else if (!questionAnswer[i].classList.contains('d-none'))
+            if (questionAnswer[i].classList.contains('d-none')){
+                questionAnswer[i].classList.remove('d-none');
+                cramp.classList.add("active");
+            }
+            
+            else if (!questionAnswer[i].classList.contains('d-none')){
                 questionAnswer[i].classList.add('d-none')
+                cramp.classList.remove("active");
+            }
         }
     }
 
@@ -82,7 +95,14 @@ window.addEventListener("load", function () {
             cancelBtn.classList.remove('d-none')
             registBtn.classList.remove('d-none')
         }
+    }
 
+    cancelBtn.onclick = function (e) {
+        if(!inputContainer.classList.contains('d-none'))
+            inputContainer.classList.add('d-none');
+            cancelBtn.classList.add('d-none');
+            registBtn.classList.add('d-none');
+            writeBtn.classList.remove('d-none');
     }
 
     //덕템이용방법 페이지
@@ -213,5 +233,8 @@ window.addEventListener("load", function () {
             methodPage.classList.add('d-none');
         }
     }
+
+
+
 
 });
