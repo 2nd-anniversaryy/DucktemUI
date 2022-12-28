@@ -7,6 +7,12 @@
     */
 }
 
+.background{
+    z-index: 999;
+}
+.background-dark{
+    background-color: rgba(0, 0, 0, 0.355);
+}
 
 
 /* ===================== 위자드 인덱스 부분  ===================== */
@@ -22,20 +28,24 @@
 }
 
 
+.wizard-index{
+    color: var(--color-light);
+    font-size: var(--font-5);
+    font-weight: 900;
+    text-align: center;
 
+}
 
 .wizard {
-    display: inline-block;
+    display: inline-flex;
     width: 50px;
     height: 50px;
     border: 0;
     border-radius: 25px;
     background-color: #BBBBBB;
-    color: var(--color-light);
-    font-size: var(--font-5);
-    font-weight: 900;
-    text-align: center;
-    line-height: 55px;
+    justify-content: center;
+    align-items: center;
+    
 
 }
 
@@ -174,13 +184,26 @@
     -webkit-appearance: none;
 }
 
-.img-input {
-    display: none;
+.img-input, .img-input-after {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
-.reg1 .padding-0 {
+.reg1 .input-box{
+    display: inline-block;
     padding: 0;
 }
+
+.reg1 .img-count{
+    font-size: var(--font-2);
+    color: rgb(82, 82, 82);
+}
+
+
+
+
 
 /* <!-- ==========     2번 페이지    ========== --> */
 
@@ -201,11 +224,13 @@
 }
 
 
+
+
 /* -----------------------------------  다시  ----------------------------------- */
 .supercategory-select, .subcategory-select{
    
     background-color: var(--color-light);
-    width: 95%;
+    width: 100%;
     /* height: 500px; */
     
 
@@ -322,6 +347,10 @@
 .reg3-tag-container .btn-default{
     padding: .5em;
     
+}
+
+.reg3 .btn-tag{
+    padding: .3em 2em;
 }
 
 /* <!-- ==========     4번 페이지    ========== --> */
@@ -471,7 +500,7 @@
 
 }
 
-@media (min-width: 768px) and (max-width: 1023px) { 
+@media (min-width: 768px)  { 
 
     /* ----여기를 만들자---- */
 
@@ -503,9 +532,9 @@
     width: 60%;
 }
 
-.img-input {
+/* .img-input {
     display: none;
-}
+} */
 
 .reg1 .padding-0 {
     padding: 0;
@@ -533,6 +562,11 @@
     height: 100px;
     font-family: var(--font-main);
     
+}
+
+
+.supercategory-select, .subcategory-select{
+    width: 400px;
 }
 
 
