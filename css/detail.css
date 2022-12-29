@@ -1,119 +1,111 @@
-main {
+.product-img {
+  width: 100%;
 }
 
-.product-img {
-    width: 100%;
-  }
-  
-  .profile-img {
-    height: 55px;
-    width: 55px;
-    border-radius: 50%;
-    grid-area: img;
-  }
-  
-  .profile-container {
-    margin: 10px;
-    display: grid;
-    grid-template:
-      "img username username" 35px
-      "img productcount reviewinfo" 35px/
-      60px 1fr 120px;
-  
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .profile-container>h1 {
-    grid-area: username;
-    font-size: var(--font-4);
-  }
-  
-  .product-count {
-    font-size: var(--font-2);
-    grid-area: productcount;
-  }
-  
-  .review-info {
-    grid-area: reviewinfo;
-    text-align: center;
-  }
-  
-  .detail-container {
-    width: 370px;
-    padding: 10px;
-    display: grid;
-    grid-template:
-      "title icon" 50px
-      "detail detail" 120px/
-      230px 1fr;
-  }
-  
-  .detail-container-title {
-    grid-area: title;
-  }
-  
-  .detail-container-title>h1 {
-    font-size: var(--font-4);
-  }
-  
-  .detail-icon {
-    display: flex;
-    grid-area: icon;
-    justify-content: flex-end;
-    column-gap: 5px;
-  }
-  
-  .detail-icon div:first-child {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-  }
-  
-  .detail-container-title span:last-child {
-    color: rgba(128, 128, 128, 0.698);
-    font-size: var(--font-1);
-  }
-  
-  .detail-category {
-    font-size: calc(var(--font-1) + 2px);
-  }
-  
-  .detail-icon img {
-    width: 20px;
-    height: 20px;
-  }
-  
-  .detail-icon>div span {
-    font-size: var(--font-1);
-  }
-  
-  .detail-container>p {
-    grid-area: detail;
-  }
-  
-  .detail-button {
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .detail-spec-container {
-    padding: 0 20px;
-  }
-  
-  .detail-spec-container ul li {
-    padding: 5px;
-    font-size: var(--font-2);
-    color: var(--color-secondary-button);
-  }
-  
-  .detail-user-others {
-    font-size: var(--font-4);
-    padding: 10px;
-  }
+.profile-img {
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  grid-area: img;
+}
 
-  .product-wrap {
-    margin: 10px;
-  }
+.profile-container {
+  margin: 10px;
+  display: grid;
+  grid-template:
+    "img username username" 35px
+    "img productcount reviewinfo" 35px/
+    60px 1fr 120px;
 
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-container>h1 {
+  grid-area: username;
+  font-size: var(--font-4);
+}
+
+.product-count {
+  font-size: var(--font-2);
+  grid-area: productcount;
+}
+
+.review-info {
+  grid-area: reviewinfo;
+  text-align: center;
+}
+
+.detail-container {
+  width: 370px;
+  padding: 10px;
+  display: grid;
+  grid-template:
+    "title icon" 50px
+    "detail detail" 120px/
+    230px 1fr;
+}
+
+.detail-container-title {
+  grid-area: title;
+}
+
+.detail-container-title>h1 {
+  font-size: var(--font-4);
+}
+
+.detail-icon {
+  display: flex;
+  grid-area: icon;
+  justify-content: flex-end;
+  column-gap: 5px;
+}
+
+.detail-icon div:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.detail-container-title span:last-child {
+  color: rgba(128, 128, 128, 0.698);
+  font-size: var(--font-1);
+}
+
+.detail-category {
+  font-size: calc(var(--font-1) + 2px);
+}
+
+.detail-icon img {
+  width: 20px;
+  height: 20px;
+}
+
+.detail-icon>div span {
+  font-size: var(--font-1);
+}
+
+.detail-container>p {
+  grid-area: detail;
+}
+
+.detail-button {
+  display: flex;
+  justify-content: space-around;
+}
+
+.detail-spec-container {
+  padding: 0 20px;
+}
+
+.detail-spec-container ul li {
+  padding: 5px;
+  font-size: var(--font-2);
+  color: var(--color-secondary-button);
+}
+
+.detail-user-others {
+  font-size: var(--font-4);
+  padding: 10px;
+}

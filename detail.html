@@ -21,68 +21,71 @@
     <header>
 
         <section class="header-wrap">
-          <div>
-            <nav class="menu-bar">
-              <input class="burger-check" type="checkbox" id="burger-check" />
-              <label class="burger-icon" for="burger-check">
-                <span class="burger-sticks"></span>
-              </label>
-    
-              <div class="menu-bar-category">
-                <div class="category-login">
-                  <a href="">로그인/회원가입</a>
-                </div>
-    
-                <ul class="my-list">
-                  <li>내 상점</li>
-                  <li>굿즈 판매하기</li>
-                  <li>마이 페이지</li>
-                  <li>마이 알림</li>
-                  <li>마이 설정</li>
-                </ul>
-    
-                <div class="middle-line"><span>카테고리</span></div>
-    
-                <div class="category-goods-wrap">
-                  <div class="category-goods">
-                    <input type="checkbox" name="" id="category-checkbox"><label for="category-checkbox">공식 굿즈</label>
-                  </div>
-                  <div class="category-goods">
-                    <input type="checkbox" name="" id="category-checkbox"><label for="category-checkbox">비공식 굿즈</label>
-                  </div>
-                  <div class="category-goods">
-                    <input type="checkbox" name="" id="category-checkbox"><label for="category-checkbox">대리 티켓팅</label>
-                  </div>
-                </div>
-    
-                <ul class="menu-extra">
-                  <li>헬프센터</li>
-                  <li>1:1문의하기</li>
-                  <li>다크모드</li>
-                </ul>
-    
-              </div>
-            </nav>
-    
-            <img class="logo" src="/image/logo.png" alt="로고" />
-          </div>
-    
-          <div class="half-middle-category">
-            <a href="">공식 굿즈</a>
-            <a href="">비공식 굿즈</a>
-            <a href="">대리 티켓팅</a>
-            <a href="">헬프센터</a>
-            <a href="">1:1 문의하기</a>
-          </div>
-    
-          <div class="header-icon">
-            <img src="/image/icon/search.svg" alt="검색">
-            <img src="/image/icon/bell.svg" alt="알람">
-            <img src="/image/icon/icon-message.svg" alt="채팅">
-          </div>
+            <div>
+                <nav class="menu-bar">
+                    <input class="burger-check" type="checkbox" id="burger-check" />
+                    <label class="burger-icon" for="burger-check">
+                        <span class="burger-sticks"></span>
+                    </label>
+
+                    <div class="menu-bar-category">
+                        <div class="category-login">
+                            <a href="">로그인/회원가입</a>
+                        </div>
+
+                        <ul class="my-list">
+                            <li>내 상점</li>
+                            <li>굿즈 판매하기</li>
+                            <li>마이 페이지</li>
+                            <li>마이 알림</li>
+                            <li>마이 설정</li>
+                        </ul>
+
+                        <div class="middle-line"><span>카테고리</span></div>
+
+                        <div class="category-goods-wrap">
+                            <div class="category-goods">
+                                <input type="checkbox" name="" id="category-checkbox"><label for="category-checkbox">공식
+                                    굿즈</label>
+                            </div>
+                            <div class="category-goods">
+                                <input type="checkbox" name="" id="category-checkbox"><label for="category-checkbox">비공식
+                                    굿즈</label>
+                            </div>
+                            <div class="category-goods">
+                                <input type="checkbox" name="" id="category-checkbox"><label for="category-checkbox">대리
+                                    티켓팅</label>
+                            </div>
+                        </div>
+
+                        <ul class="menu-extra">
+                            <li>헬프센터</li>
+                            <li>1:1문의하기</li>
+                            <li>다크모드</li>
+                        </ul>
+
+                    </div>
+                </nav>
+
+                <img class="logo" src="/image/logo.png" alt="로고" />
+            </div>
+
+            <div class="half-middle-category">
+                <a href="">공식 굿즈</a>
+                <a href="">비공식 굿즈</a>
+                <a href="">대리 티켓팅</a>
+                <a href="">헬프센터</a>
+                <a href="">1:1 문의하기</a>
+            </div>
+
+            <div class="header-icon">
+                <img src="/image/icon/search.svg" alt="검색">
+                <img src="/image/icon/bell.svg" alt="알람">
+                <img src="/image/icon/icon-message.svg" alt="채팅">
+            </div>
         </section>
-    
-      </header>
+
+    </header>
 
     <main>
         <img class="product-img" src="/image/product-img.jpg" alt="">
@@ -106,7 +109,8 @@
                     <span>6</span>
                 </div>
                 <div>
-                    <img src="/image/icon/icon-alert.svg" alt="">
+                    <img onclick="location.href='/member/my-page/review/report.html'" src="/image/icon/icon-alert.svg"
+                        alt="">
                 </div>
                 <div>
                     <img src="/image/icon/icon-share.svg" alt="">
@@ -130,102 +134,249 @@
         </section>
         <section>
             <h1 class="detail-user-others">이 판매자의 다른 물건</h1>
-            <section class="product-wrap">
+            <div class="product-flex">
+                <div class="product-wrap">
 
-                <div class="product-container">
-                        <img src="/image/example-image.png" alt="product-img">
+                    <div class="product-container">
+                        <div><img src="/image/example-image0.png" alt="product-img"></div>
 
-                    <div class="price-wish">
-                        <span> 80,000원</span>
+                        <div class="price-wish">
+                            <span> 80,000원</span>
+                            <img src="/image/icon/heart.svg" alt="찜">
+                        </div>
 
-                        <img src="/image/icon/heart.svg" alt="찜">
+                        <div class="name">
+                            러브다이브미공포
+                        </div>
+
+                        <div class="time">
+                            0일 전
+                        </div>
                     </div>
 
-                    <div class="name">
-                        러브다이브 미공포
+                    <div class="product-container">
+                        <div><img src="/image/example-image1.png" alt="product-img"></div>
+
+                        <div class="price-wish">
+                            <span> 80,000원</span>
+                            <img src="/image/icon/heart.svg" alt="찜">
+                        </div>
+
+                        <div class="name">
+                            러브다이브 미공포
+                        </div>
+
+                        <div class="time">
+                            0일 전
+                        </div>
                     </div>
 
-                    <div class="time">
-                        0일 전
+                    <div class="product-container">
+                        <div><img src="/image/example-image2.png" alt="product-img"></div>
+
+                        <div class="price-wish">
+                            <span> 80,000원</span>
+                            <img src="/image/icon/heart.svg" alt="찜">
+                        </div>
+
+                        <div class="name">
+                            러브다이브 미공포
+                        </div>
+
+                        <div class="time">
+                            0일 전
+                        </div>
                     </div>
+
+                    <div class="product-container">
+                        <div><img src="/image/example-image0.png" alt="product-img"></div>
+
+                        <div class="price-wish">
+                            <span> 80,000원</span>
+                            <img src="/image/icon/heart.svg" alt="찜">
+                        </div>
+
+                        <div class="name">
+                            러브다이브 미공포
+                        </div>
+
+                        <div class="time">
+                            0일 전
+                        </div>
+                    </div>
+
+                    <div class="product-container">
+                        <div><img src="/image/example-image0.png" alt="product-img"></div>
+
+                        <div class="price-wish">
+                            <span> 80,000원</span>
+                            <img src="/image/icon/heart.svg" alt="찜">
+                        </div>
+
+                        <div class="name">
+                            러브다이브 미공포
+                        </div>
+
+                        <div class="time">
+                            0일 전
+                        </div>
+                    </div>
+
+                    <div class="product-container">
+                        <div><img src="/image/example-image0.png" alt="product-img"></div>
+
+                        <div class="price-wish">
+                            <span> 80,000원</span>
+                            <img src="/image/icon/heart.svg" alt="찜">
+                        </div>
+
+                        <div class="name">
+                            러브다이브 미공포
+                        </div>
+
+                        <div class="time">
+                            0일 전
+                        </div>
+                    </div>
+
+                    <div class="product-container">
+                        <div><img src="/image/example-image0.png" alt="product-img"></div>
+
+                        <div class="price-wish">
+                            <span> 80,000원</span>
+                            <img src="/image/icon/heart.svg" alt="찜">
+                        </div>
+
+                        <div class="name">
+                            러브다이브 미공포
+                        </div>
+
+                        <div class="time">
+                            0일 전
+                        </div>
+                    </div>
+
+                    <div class="product-container">
+                        <div><img src="/image/example-image0.png" alt="product-img"></div>
+
+                        <div class="price-wish">
+                            <span> 80,000원</span>
+                            <img src="/image/icon/heart.svg" alt="찜">
+                        </div>
+
+                        <div class="name">
+                            러브다이브 미공포
+                        </div>
+
+                        <div class="time">
+                            0일 전
+                        </div>
+                    </div>
+
+                    <div class="product-container">
+                        <div><img src="/image/example-image0.png" alt="product-img"></div>
+
+                        <div class="price-wish">
+                            <span> 80,000원</span>
+                            <img src="/image/icon/heart.svg" alt="찜">
+                        </div>
+
+                        <div class="name">
+                            러브다이브 미공포
+                        </div>
+
+                        <div class="time">
+                            0일 전
+                        </div>
+                    </div>
+
+                    <div class="product-container">
+                        <div><img src="/image/example-image0.png" alt="product-img"></div>
+
+                        <div class="price-wish">
+                            <span> 80,000원</span>
+                            <img src="/image/icon/heart.svg" alt="찜">
+                        </div>
+
+                        <div class="name">
+                            러브다이브 미공포
+                        </div>
+
+                        <div class="time">
+                            0일 전
+                        </div>
+                    </div>
+
+                    <div class="product-container">
+                        <div><img src="/image/example-image0.png" alt="product-img"></div>
+
+                        <div class="price-wish">
+                            <span> 80,000원</span>
+                            <img src="/image/icon/heart.svg" alt="찜">
+                        </div>
+
+                        <div class="name">
+                            러브다이브 미공포
+                        </div>
+
+                        <div class="time">
+                            0일 전
+                        </div>
+                    </div>
+
+                    <div class="product-container">
+                        <div><img src="/image/example-image0.png" alt="product-img"></div>
+
+                        <div class="price-wish">
+                            <span> 80,000원</span>
+                            <img src="/image/icon/heart.svg" alt="찜">
+                        </div>
+
+                        <div class="name">
+                            러브다이브 미공포
+                        </div>
+
+                        <div class="time">
+                            0일 전
+                        </div>
+                    </div>
+
+                    <div class="product-container">
+                        <div><img src="/image/example-image0.png" alt="product-img"></div>
+
+                        <div class="price-wish">
+                            <span> 80,000원</span>
+                            <img src="/image/icon/heart.svg" alt="찜">
+                        </div>
+
+                        <div class="name">
+                            러브다이브 미공포
+                        </div>
+
+                        <div class="time">
+                            0일 전
+                        </div>
+                    </div>
+
+                    <div class="product-container">
+                        <div><img src="/image/example-image0.png" alt="product-img"></div>
+
+                        <div class="price-wish">
+                            <span> 80,000원</span>
+                            <img src="/image/icon/heart.svg" alt="찜">
+                        </div>
+
+                        <div class="name">
+                            러브다이브 미공포
+                        </div>
+
+                        <div class="time">
+                            0일 전
+                        </div>
+                    </div>
+
                 </div>
-
-
-
-
-                <div class="product-container">
-                    <img src="/image/example-image.png" alt="product-img">
-
-                    <div class="price-wish">
-                        <span> 80,000원</span>
-                        <img src="/image/icon/heart.svg" alt="찜">
-                    </div>
-
-                    <div class="name">
-                        러브다이브 미공포
-                    </div>
-
-                    <div class="time">
-                        0일 전
-                    </div>
-                </div>
-
-
-
-                <div class="product-container">
-                    <img src="/image/example-image.png" alt="product-img">
-
-                    <div class="price-wish">
-                        <span> 80,000원</span>
-                        <img src="/image/icon/heart.svg" alt="찜">
-                    </div>
-
-                    <div class="name">
-                        러브다이브 미공포
-                    </div>
-
-                    <div class="time">
-                        0일 전
-                    </div>
-                </div>
-
-
-                <div class="product-container">
-                    <img src="/image/example-image.png" alt="product-img">
-
-                    <div class="price-wish">
-                        <span> 80,000원</span>
-                        <img src="/image/icon/heart.svg" alt="찜">
-                    </div>
-
-                    <div class="name">
-                        러브다이브 미공포
-                    </div>
-
-                    <div class="time">
-                        0일 전
-                    </div>
-                </div>
-
-
-                <div class="product-container">
-                    <img src="/image/example-image.png" alt="product-img">
-
-                    <div class="price-wish">
-                        <span> 80,000원</span>
-                        <img src="/image/icon/heart.svg" alt="찜">
-                    </div>
-
-                    <div class="name">
-                        러브다이브 미공포
-                    </div>
-
-                    <div class="time">
-                        0일 전
-                    </div>
-                </div>
-
-            </section>
+            </div>
         </section>
 
         <section class="bottom-bar-wrap">

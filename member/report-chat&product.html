@@ -12,7 +12,22 @@
   <link rel="stylesheet" href="/css/layout.css" />
   <link rel="stylesheet" href="/css/button.css">
   <link rel="stylesheet" href="/css/component.css">
+  <link rel="stylesheet" href="/css/modal.css">
   <link rel="stylesheet" href="/css/member/report-chat&product.css">
+
+  <script>
+    window.addEventListener('load', function () {
+      const finalCheckBtn = document.querySelector('.final-check-btn');
+      const modalBackground = document.querySelector('.modal-background');
+
+      finalCheckBtn.onclick = function (e) {
+        e.preventDefault();
+        if (modalBackground.classList.contains('d-none'))
+          modalBackground.classList.remove('d-none');
+      }
+
+    });
+  </script>
 </head>
 
 <body>
@@ -48,13 +63,21 @@
         <input type="checkbox" name="" id="8"><label for="8">기타 사유</label>
       </div>
 
-      <textarea name="기타 사유" id="" cols="30" rows="10" placeholder="더 나은 덕템을 만들 수 있도록 도와주세요! 무분별한 신고는 오히려 해가 될 수 있습니다."></textarea>
+      <textarea name="기타 사유" id="" cols="30" rows="10"
+        placeholder="더 나은 덕템을 만들 수 있도록 도와주세요! 무분별한 신고는 오히려 해가 될 수 있습니다."></textarea>
 
       <div>
-        <input class="btn btn-default" type="submit" value="신고하기" >
+        <button class="btn btn-default final-check-btn">신고하기</button>
       </div>
 
     </form>
+
+    <div class="d-none modal-background">
+      <div class="modal-box">
+        <h1>신고가 완료되었습니다.</h1>
+        <button onclick="location.href='/member/my-page/index.html'" class="btn btn-cancel">확인</button>
+      </div>
+    </div>
 
   </main>
 
