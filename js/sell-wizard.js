@@ -1,12 +1,5 @@
 
-
-
-
-
-
-
-
-//=======================================================================//
++//=======================================================================//
 // ====================    상품등록 (이전 이후 넘기기)    ================//
 //=======================================================================//
 window.addEventListener("load", function () {
@@ -150,15 +143,6 @@ window.addEventListener("load", function () {
 
 
 
-
-
-
-
-
-
-
-
-
     //=======================================================================//
     // ====================    카테고리 선택 (2번째 페이지)    ================//
     //=======================================================================//
@@ -259,8 +243,8 @@ window.addEventListener("load", function () {
 
 
     const tagInput = document.querySelector(".tag-input");
-    const tag = document.querySelector(".btn-tag");
-    const addBtn = document.querySelector(".btn-tag-add");
+    const tag = document.querySelector(".tag-default");
+    const addBtn = document.querySelector(".btn-add");
     const tagBox = document.querySelector(".tag-box")
     console.log(tag)
     
@@ -307,32 +291,6 @@ window.addEventListener("load", function () {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 })
-
 
 
