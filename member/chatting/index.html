@@ -13,9 +13,11 @@
     <link rel="stylesheet" href="/css/layout.css" />
     <link rel="stylesheet" href="/css/button.css">
     <link rel="stylesheet" href="/css/component.css">
+    <link rel="stylesheet" href="/css/modal.css">
     <link rel="stylesheet" href="/css/member/chatting/index.css">
 
     <script src="/js/header.js"></script>
+
 </head>
 
 <body>
@@ -24,7 +26,7 @@
             <div class="backpage-btn-wrap">
                 <img class="backpage-btn" src="/image/talk-icon/back.png" alt="">
 
-                <span class="others">상대방닉네임</span>
+                <h1 class="others">상대방</h1>
             </div>
             <div class="option-btn-wrap">
                 <img class="option-btn" src="/image/talk-icon/점3개옵션.svg" alt="">
@@ -54,45 +56,49 @@
                     </div>
                 </div>
 
-                <div class="chat-text-section">
-                    <div class="others-chat-wrap">
-                        <div class="others-img-wrap">
-                            <img class="others-img" src="/image/talk-icon/human.svg" alt="">
+                <ul class="chat-text-section">
+                    <!-- <li class="send-wrap">
+                        <div class="img-wrap">
+                            <img class="img" src="/image/talk-icon/human.svg" alt="">
                         </div>
-                        <div class="others-chat-text">
-                            동해물과백두산이 마르고닳도록 하느님이 보우하사 우리나라만세
-                            무궁화 삼천리 화려강산 대한사람 대한으로 길이보전하세 남산
-                            위에 저 소나무 철갑을 두르듯 바람서리 불변함은 우리기상일세
+                        <div class="chat-text">
+                            동해물과백두산이
                         </div>
                         <div class="chat-text-date">오후 00:00</div>
 
-                    </div>
+                    </li>
 
-                    <div class="my-chat-wrap">
-                        <div class="chat-text-date">오후 00:00</div>
-                        <div class="my-chat-text">
+                    <li class="received-wrap">
+                        <div class="img-wrap">
+                            <img class="img" src="/image/talk-icon/human.svg" alt="">
+                        </div>
+                        <div class="chat-text">
                             좀 조용히해라
                         </div>
-                        <div class="my-img-wrap">
-                            <img class="my-img" src="/image/talk-icon/human.svg" alt="">
-                        </div>
-                    </div>
-
-                    <div class="others-chat-wrap">
-                        <div class="others-img-wrap">
-                            <img class="others-img" src="/image/talk-icon/human.svg" alt="">
-                        </div>
-                        <div class="others-chat-text">
-                            동해물과백두산이 마르고닳도록 하느님이 보우하사 우리나라만세
-                            무궁화 삼천리 화려강산 대한사람 대한으로 길이보전하세 남산
-                            위에 저 소나무 철갑을 두르듯 바람서리 불변함은 우리기상일세
-                        </div>
                         <div class="chat-text-date">오후 00:00</div>
+                    </li> -->
+
+                </ul>
+            </section>
+            <div class="chat-input-box">
+                <div class="chat-input-area">
+                    <div class="tool-box">
+                        <img class="btn-bold" src="/image/talk-icon/bold.svg" alt="">
+                        <img src="/image/talk-icon/italic.svg" alt="">
+                        <img src="/image/talk-icon/취소선.svg" alt="">
+                    </div>
+                    <div>
+                        <input class="chat-input" type="text" placeholder="상대방에게 메시지 보내기">
+                    </div>
+                    <div class="button-wrap">
+                        <div>
+                            <img src="/image/talk-icon/camera.svg" alt="">
+                        </div>
+                        <div>
+                            <img src="/image/talk-icon/send-button.svg" class="send-button"></img>
+                        </div>
                     </div>
                 </div>
-            </section>
-            <div class="chat-input-area">
-
             </div>
 
         </section>
